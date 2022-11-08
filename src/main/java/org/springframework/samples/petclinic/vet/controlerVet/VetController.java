@@ -13,13 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.springframework.samples.petclinic.vet;
+package org.springframework.samples.petclinic.vet.controlerVet;
 
 import java.util.List;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.samples.petclinic.vet.daoVet.Vet;
+import org.springframework.samples.petclinic.vet.daoVet.Vets;
+import org.springframework.samples.petclinic.vet.dtoVet.VetRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

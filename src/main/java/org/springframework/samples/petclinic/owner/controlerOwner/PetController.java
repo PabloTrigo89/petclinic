@@ -13,10 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.springframework.samples.petclinic.owner;
+package org.springframework.samples.petclinic.owner.controlerOwner;
 
 import java.util.Collection;
 import javax.validation.Valid;
+
+import org.springframework.samples.petclinic.owner.daoOwner.Owner;
+import org.springframework.samples.petclinic.owner.daoOwner.Pet;
+import org.springframework.samples.petclinic.owner.daoOwner.PetType;
+import org.springframework.samples.petclinic.owner.dtoOwner.OwnerRepository;
+import org.springframework.samples.petclinic.owner.serviciosOwner.PetValidator;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.util.StringUtils;
@@ -58,7 +64,7 @@ class PetController {
 
 	@ModelAttribute("pet")
 	public Pet findPet(@PathVariable("ownerId") int ownerId,
-			@PathVariable(name = "petId", required = false) Integer petId) {
+					   @PathVariable(name = "petId", required = false) Integer petId) {
 		return petId == null ? new Pet() : this.owners.findById(ownerId).getPet(petId);
 	}
 

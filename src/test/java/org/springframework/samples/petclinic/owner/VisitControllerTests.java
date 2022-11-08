@@ -28,6 +28,10 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.samples.petclinic.owner.controlerOwner.VisitController;
+import org.springframework.samples.petclinic.owner.daoOwner.Owner;
+import org.springframework.samples.petclinic.owner.daoOwner.Pet;
+import org.springframework.samples.petclinic.owner.dtoOwner.OwnerRepository;
 import org.springframework.test.web.servlet.MockMvc;
 
 /**

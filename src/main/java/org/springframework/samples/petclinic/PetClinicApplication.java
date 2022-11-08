@@ -21,10 +21,10 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.samples.petclinic.vet.Specialty;
-import org.springframework.samples.petclinic.vet.SpecialtyRepository;
-import org.springframework.samples.petclinic.vet.Vet;
-import org.springframework.samples.petclinic.vet.VetRepository;
+import org.springframework.samples.petclinic.vet.daoVet.Specialty;
+import org.springframework.samples.petclinic.vet.dtoVet.SpecialtyRepository;
+import org.springframework.samples.petclinic.vet.daoVet.Vet;
+import org.springframework.samples.petclinic.vet.dtoVet.VetRepository;
 
 /**
  * PetClinic Spring Boot Application.
